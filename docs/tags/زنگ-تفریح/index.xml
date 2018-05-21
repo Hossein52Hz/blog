@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>زنگ تفریح on Blue Bit</title>
+    <link>https://hossein52hz.github.io/blog/tags/%D8%B2%D9%86%DA%AF-%D8%AA%D9%81%D8%B1%DB%8C%D8%AD/</link>
+    <description>Recent content in زنگ تفریح on Blue Bit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Masoudi</copyright>
+    <lastBuildDate>Tue, 01 May 2018 23:12:41 +0430</lastBuildDate>
+    
+	<atom:link href="https://hossein52hz.github.io/blog/tags/%D8%B2%D9%86%DA%AF-%D8%AA%D9%81%D8%B1%DB%8C%D8%AD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>زنگ تفریح با Hugo قسمت دوم</title>
+      <link>https://hossein52hz.github.io/blog/fun-with-hugo-2/</link>
+      <pubDate>Tue, 01 May 2018 23:12:41 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/fun-with-hugo-2/</guid>
+      <description>توی قسمت اول در مورد مقدمه و نصب و راه اندازی سایت با Hugo توضیح دادم.
+این قسمت میریم سراغ موارد زیر:
+ ایجاد اولین نوشته تنظیمات مربوط به قالب بارگزاری قالب در گیت هاب  ایجاد اولین نوشته خب برای ایجاد اولین نوشته میتونید از دستور زیر استفاده کنید:
+hugo new posts/my-first-post.md بعد از ایجاد پست میتونید دستور زیر را اجرا کنید تا خروجی سایت ساخته بشه:
+hugo server خب برای مشاهده خروجی میتونید ی سر به آدرس http://localhost:1313 بزنید.</description>
+    </item>
+    
+    <item>
+      <title>زنگ تفریح با Hugo قسمت اول</title>
+      <link>https://hossein52hz.github.io/blog/fun-with-hugo/</link>
+      <pubDate>Wed, 25 Apr 2018 16:21:42 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/fun-with-hugo/</guid>
+      <description>سلام خدمت دوستانی که شاید گذرشون به اینجا بخوره :)
+راستش از سر کنجکاوی رفتم سراغ هیوگو یا Hugo که یک سایت ساز استاتیک هست. یکم جست و جو کردم و طبق معمول منابع فارسی خاصی پیدا نمیشه. برای همین گفتم چیزایی که تا الان یاد گرفتم را اینجا بنویسم شاید بدرد کسی بخوره.
+خب همونطور که میدونید Hugo یک سایت ساز استاتیک هست و میشه گفت یکی از رقیب های jeklly که شاید از قبل باهاش آشنایی داشته باشید.</description>
+    </item>
+    
+  </channel>
+</rss>

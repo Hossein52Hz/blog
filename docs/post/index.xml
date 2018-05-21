@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blue Bit</title>
+    <link>https://hossein52hz.github.io/blog/post/</link>
+    <description>Recent content in Posts on Blue Bit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Masoudi</copyright>
+    <lastBuildDate>Tue, 22 May 2018 01:02:25 +0430</lastBuildDate>
+    
+	<atom:link href="https://hossein52hz.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>چرا باید به قبرستان‌ها برویم!</title>
+      <link>https://hossein52hz.github.io/blog/visit-cemeteries/</link>
+      <pubDate>Tue, 22 May 2018 01:02:25 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/visit-cemeteries/</guid>
+      <description>چرا باید به قبرستان شرکت های نرم افزاری سری بزنیم؟ ریک به هر کجا نگاه می کند ستاره های راک را می بیند. صفحه تلوزیون، جلد مجلات، برنامه های کنسرت و سایت های هواداران، آن ها را همه جا می توان دید. نمی توان آهنگ هایشان را در میان بازار، رادیو و سالن های بدن سازی نشنید. ستارگان راک همه جا حضور دارند. خیلی پر شمار و موفق اند. ریک که از داستان های قهرمانان پر شمار گیتاریست هیجان زده شده بود یک گروه موسیقی راه اندازی کرد.</description>
+    </item>
+    
+    <item>
+      <title>زنگ تفریح با Hugo قسمت دوم</title>
+      <link>https://hossein52hz.github.io/blog/fun-with-hugo-2/</link>
+      <pubDate>Tue, 01 May 2018 23:12:41 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/fun-with-hugo-2/</guid>
+      <description>توی قسمت اول در مورد مقدمه و نصب و راه اندازی سایت با Hugo توضیح دادم.
+این قسمت میریم سراغ موارد زیر:
+ ایجاد اولین نوشته تنظیمات مربوط به قالب بارگزاری قالب در گیت هاب  ایجاد اولین نوشته خب برای ایجاد اولین نوشته میتونید از دستور زیر استفاده کنید:
+hugo new posts/my-first-post.md بعد از ایجاد پست میتونید دستور زیر را اجرا کنید تا خروجی سایت ساخته بشه:
+hugo server خب برای مشاهده خروجی میتونید ی سر به آدرس http://localhost:1313 بزنید.</description>
+    </item>
+    
+    <item>
+      <title>زنگ تفریح با Hugo قسمت اول</title>
+      <link>https://hossein52hz.github.io/blog/fun-with-hugo/</link>
+      <pubDate>Wed, 25 Apr 2018 16:21:42 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/fun-with-hugo/</guid>
+      <description>سلام خدمت دوستانی که شاید گذرشون به اینجا بخوره :)
+راستش از سر کنجکاوی رفتم سراغ هیوگو یا Hugo که یک سایت ساز استاتیک هست. یکم جست و جو کردم و طبق معمول منابع فارسی خاصی پیدا نمیشه. برای همین گفتم چیزایی که تا الان یاد گرفتم را اینجا بنویسم شاید بدرد کسی بخوره.
+خب همونطور که میدونید Hugo یک سایت ساز استاتیک هست و میشه گفت یکی از رقیب های jeklly که شاید از قبل باهاش آشنایی داشته باشید.</description>
+    </item>
+    
+    <item>
+      <title>سخن آغازین</title>
+      <link>https://hossein52hz.github.io/blog/my-first-blog-post/</link>
+      <pubDate>Wed, 25 Apr 2018 15:48:23 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/my-first-blog-post/</guid>
+      <description>اولین پست من در وبلاگ که بعدا تکمیل میشه :) اینجا به نظرم جای خوبیه برای انتشار دیدگاه ها و چیزهای جالبی که بهشون بر میخورم و ممکنه در موردشون بنویسم. راستش دلم میخواست از تجربیات تلخی که داشتم هم اینجا بنویسم اما خب فعلا مثبت فکر کنیم بهتر هست :)
+همیشه وسواس زیاد یا ایده آل بودن چیز جالبی نیست. برای همین تصمیم گرفتم بنویسم هرچند کوتاه یا اشتباه، ولی بنویسم و به مرور زمان تصحیح کنم.</description>
+    </item>
+    
+  </channel>
+</rss>

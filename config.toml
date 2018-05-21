@@ -1,0 +1,46 @@
+baseurl = "https://hossein52hz.github.io/blog/"
+title = "Blue Bit"
+publishdir = "docs"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "Masoudi"
+disqusShortname = "hossein52hz"
+
+
+[Author]
+    name = "Masoudi"
+    profile = "https://google.com/+XXX"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    intro = true
+    headline = "Blue Bit"
+    description = "یک عدد دانشجو علاقه مند به دنیای برنامه نویسی"
+    github = "https://github.com/hossein52hz"
+    twitter = "https://twitter.com/hossein52hz"
+   
+    email = "hossein52hz@gmail.com"
+    opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareGooglePlus = true
+    shareLinkedIn = true
+    dateFormat = "Mon, Jan 2, 2006"
+    highlightJsUrl = "false"
+    highlightJsLocalUrl = "false"
+
+[Permalinks]
+    post = "/:filename/"
+    page = "/:filename/"
+    tag  = "/:filename/"
+[[menu.main]]
+    name = "درباره من"
+    url = "/about"
+    weight = 1
+
+[[menu.main]]
+    name = "تماس با من"
+    url = "/contact/"
+    weight = 2

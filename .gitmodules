@@ -1,0 +1,6 @@
+[submodule "themes/masoudi"]
+	path = themes/masoudi
+	url = https://github.com/jbub/ghostwriter.git
+[submodule "themes/ghostwriter"]
+	path = themes/ghostwriter
+	url = https://github.com/jbub/ghostwriter.git
