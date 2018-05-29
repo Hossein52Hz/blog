@@ -211,6 +211,9 @@ table tr { border-bottom: 1px dotted #aeadad; }
  .footer { margin-top: 50px; }
  .footer .site-title-wrapper { text-align: center; }
  .footer .button-jump-top { clear: both; display: inline-block; float: none; }
+ .post-stub{ text-align: center; padding: 12px 5px; }
+ .post-stub-date{ float: none; padding-top: 6px;}
+ .post-stub-title{ color: #f03838; }
 }
 @media only screen and (max-width: 400px) {
  .site-header { padding-top: 40px; }
@@ -224,6 +227,9 @@ table tr { border-bottom: 1px dotted #aeadad; }
  .author-avatar { display: block; margin: 0 auto 18px; }
  .author-meta span { display: block; margin: 18px 0; }
  .footer-copyright { padding: 0 10px; }
+ .post-stub{ text-align: center; padding: 12px 5px; }
+ .post-stub-date{ float: none; padding-top: 6px;}
+ .post-stub-title{ color: #f03838; }
 }
 .highlight pre{
     direction: ltr !important;
@@ -231,3 +237,6 @@ table tr { border-bottom: 1px dotted #aeadad; }
 .post-content p img{
     margin: 0% auto;
 }
+
+
+
