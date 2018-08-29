@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Multiple SSH-keys for Github/Gitlab &middot; Masoudi</title>
+        <meta name="description" content="با سلام خدمت همه دوستان
+در این پست قرار هست نحوه استفاده از چند ssh-key برای اکانت های مختلف گیت‌هاب یا گیت‌لب را با هم بررسی کنیم.
+خب ممکنه شما چندتا اکانت گیت‌هاب یا گیت‌لب داشته باشید و یا حتی هم اکانت گیت هاب و هم اکانت گیت‌لب دارید و مدام برای پروژه هاتون کدنویسی میکنید. برای اینکه بتونید از چندتا ssh-key مختلف استفاده کنید کافیه ادامه این پست را همراه من باشید :)">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.40" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Multiple SSH-keys for Github/Gitlab">
+<meta property="og:description" content="با سلام خدمت همه دوستان
+در این پست قرار هست نحوه استفاده از چند ssh-key برای اکانت های مختلف گیت‌هاب یا گیت‌لب را با هم بررسی کنیم.
+خب ممکنه شما چندتا اکانت گیت‌هاب یا گیت‌لب داشته باشید و یا حتی هم اکانت گیت هاب و هم اکانت گیت‌لب دارید و مدام برای پروژه هاتون کدنویسی میکنید. برای اینکه بتونید از چندتا ssh-key مختلف استفاده کنید کافیه ادامه این پست را همراه من باشید :)">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hossein52hz.github.io/blog/github-gitlab-multi-ssh-acount/">
+        <link rel="stylesheet" href="https://hossein52hz.github.io/blog/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Blue Bit" href="https://hossein52hz.github.io/blog/">Blue Bit</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://hossein52hz.github.io/blog/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/hossein52hz">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/hossein52hz">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:hossein52hz@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="درباره من" href="/blog/about">درباره من</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="تماس با من" href="/blog/contact/">تماس با من</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Multiple SSH-keys for Github/Gitlab</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2018-08-29" itemprop="datePublished">Wed, Aug 29, 2018</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">Masoudi</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<p>با سلام خدمت همه دوستان</p>
+
+<p>در این پست قرار هست نحوه  استفاده از چند ssh-key برای اکانت های مختلف گیت‌هاب یا گیت‌لب را با هم بررسی کنیم.</p>
+
+<p>خب ممکنه شما چندتا اکانت گیت‌هاب یا گیت‌لب داشته باشید و یا حتی هم اکانت گیت هاب و هم اکانت گیت‌لب دارید و مدام برای پروژه هاتون کدنویسی میکنید.
+برای اینکه بتونید از چندتا ssh-key مختلف استفاده کنید کافیه ادامه این پست را همراه من باشید :)</p>
+
+<h2 id="github">Github</h2>
+
+<p>ابتدا میریم سراغ گیت‌هاب. برای اینکار باید اول از همه ssh برای خودمون بسازیم. و برای این کار کافی هست از دستور زیر در ترمینال استفاده کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;your_name@home_email.com&#34;</span></code></pre></div>
+
+<p>در اینجا با استفاده از ssh-kegen ما یک کلید جدید generate می کنیم که نوع اون rsa هست و قسمت آخر هم your_name@home_email.com آدرس ایمیل تون را باید وارد کنید.</p>
+
+<p>بعد از اجرای دستور بالا خروجی شبیه زیر را مشاهده خواهید کرد:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Generating public/private rsa key pair. 
+Enter file in which to save the key <span style="color:#f92672">(</span>/home/user_name/.ssh/id_rsa<span style="color:#f92672">)</span>:</code></pre></div>
+
+<p>در این مرحله باید یک اسم یکتا وارد کنید. مثلا فرض کنید  من برای پروژه های مربوط به خودم اسم زیر را وارد میکنم:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">id_rsa_personal</code></pre></div>
+
+<p>توجه داشته باشید که این نام دلخواه هست و هر اسمی که بخواهید میتونید براش قرار بدید.</p>
+
+<p>بعد از نوشتن اسم کلید Enter را فشار بدید تا وارد مرحله بعدی بشیم. در مرحله جدید از شما میخواد که یک پسورد وارد کنید و این پسورد را دو مرتبه باید وارد و Enter بزنید.</p>
+
+<p>تا اینجا شما برای اکانت خودتون یک SSH-Key درست کردید.</p>
+
+<p>حالا فرض کنید میخواید یک ssh-key هم برای پروژه های مربوط به شرکتی که درش کار میکنید درست کنید. مراحل دقیقا مثل مراحل بالا هست. به ترتیب</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;your_name@company_email.com&#34;</span></code></pre></div>
+
+<p>وارد کردن یک نام یکتا:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">id_rsa_company</code></pre></div>
+
+<p>و بعد هم وارد کردن پسورد.</p>
+
+<p>برای اینکه مطمئن بشید کلیدهای عمومی و خصوصی ایجاد شدند کافیه لیست فایل های داخل پوشه .ssh را نگاه کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ls ~/.ssh
+
+id_rsa_personal  id_rsa_company  id_rsa_personal.pub  id_rsa_company.pub</code></pre></div>
+
+<p>اما حالا وقتش رسیده تا فایل کانفیگ مربوط به مدیریت کلیدها را درست کنیم. با یک ویرایشگر یک فایل به نام config در پوشه .ssh ایجاد کنید. در اینجا من از ویرایشگر vim‌استفاده می کنم .</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cd ~/.ssh/
+$ vim config</code></pre></div>
+
+<p>داخل فایل کانفیگ کد زیر را قرار بدید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># personal account
+</span><span style="color:#75715e"></span>Host personal.github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa_personal</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Company account
+</span><span style="color:#75715e"></span>Host company.github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa_company</code></pre></div>
+
+<p>مرحله بعدی هم پاک کردن کش کلیدها هست که با دستور زیر میتونید این کار را انجام بدید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh-add -D</code></pre></div>
+
+<p>اگر در این مرحله با خطای زیر مواجه شدید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Could not open a connection to your authentication agent.</code></pre></div>
+
+<p>دستور زیر را اجرا کنید :</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">eval <span style="color:#e6db74">`</span>ssh-agent -s<span style="color:#e6db74">`</span></code></pre></div>
+
+<p>و دوباره کش را پاک کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh-add -D</code></pre></div>
+
+<p>خب حالا باید چک کنیم که آیا کلیدها درست اضافه شدند یا نه. برای اینکار دستور زیر را اجرا کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh-add -l</code></pre></div>
+
+<p>خروجی چیزی شبیه این خواهد بود:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">2048</span> d4:e0:39:e1:bf:6f:e3:26:14:6b:26:73:4e:b4:53:83 /home/hossein52hz/.ssh/id_rsa_personal <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span>
+<span style="color:#ae81ff">2048</span> 7a:32:06:3f:3d:6c:f4:a1:d4:65:13:64:a4:ed:1d:63 /home/hossein52hz/.ssh/id_rsa_company <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span></code></pre></div>
+
+<p>اما اگر خروجی شما خالی بود باید کلیدها را دستی اضافه کنید. برای اینکار دستورات زیر را اجرا کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh-add ~/.ssh/id_rsa_company
+ssh-add ~/.ssh/id_rsa_personal</code></pre></div>
+
+<p>توی این مرحله باید کلید عمومی را کپی کنیم. برای اینکار میتونید از دستور زیر استفاده کنید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">xclip -sel clip &lt; ~/.ssh/id_rsa_personal.pub</code></pre></div>
+
+<p>با این دستور کلید عمومی id_rsa_personal در clipboard کپی شده و فقط کافیه داخل اکانت گیت‌هاب خودتون برید و اونجا کلید را paste کنید.</p>
+
+<p>برای این کار وارد آدرس زیر بشید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://github.com/settings/keys</code></pre></div>
+
+<p>و روی دکمه New ssh key کلیک کنید.  توی پنجره باز شده کلید خودتون را کپی کنید. و یک نام هم براش انتخاب کنید و ذخیره.</p>
+
+<p>این کار را برای کلید id_rsa_company.pub هم تکرار کنید.</p>
+
+<p>حالا برای تست ارتباط میتونید دستور زیر را اجرا کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@home.github.com
+Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@work.github.com
+Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.</code></pre></div>
+
+<p>تبریک میگم شما موفق شدید :)</p>
+
+<h2 id="gitlab">Gitlab</h2>
+
+<p>اما در مورد گیت‌لب تمام مراحل شبیه هم هستند به جز فایل config که برای کلیدهایی که ساختید کافیه وارد فایل config توی پوشه .ssh بشید
+و کد زیر را اضافه کنید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Host gitlab.company_url.com
+   HostName gitlab.company_url.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa_gitlab_company</code></pre></div>
+
+<h1 id="gitlab-1">GITLAB</h1>
+
+<p>همونطور که متوجه شدید من یک کلید به اسم id_rsagitlab_company ایجاد کردم.
+ و بقیه مراحل هم مشابه مراحل بالا است. برای اضافه کردن کلید به گیت‌لب هم میتونید از آدرس زیر استفاده کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> https://gitlab.com/profile/keys</code></pre></div>
+
+<p>و برای تست اینکه همه چیز درست است یا نه از دستور زیر استفاده کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@gitlab.company_url.com
+    
+ Welcome to GitLab, Hossein52hz!</code></pre></div>
+
+<p>در پایان هم اگر نکته ای هست که بتونه در بهتر شدن این نوشته کمک کنه خوشحال میشم در قسمت نظرات بیان کنید.</p>
+
+<p>موفق باشید</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Multiple%20SSH-keys%20for%20Github%2fGitlab&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fgithub-gitlab-multi-ssh-acount%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhossein52hz.github.io%2fblog%2fgithub-gitlab-multi-ssh-acount%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fgithub-gitlab-multi-ssh-acount%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Multiple%20SSH-keys%20for%20Github%2fGitlab&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fgithub-gitlab-multi-ssh-acount%2f&summary="
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hossein52hz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Blue Bit" href="https://hossein52hz.github.io/blog/">Blue Bit</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span> نیرو گرفته از <a href="https://gohugo.io/">هیوگو</a> / <a href="https://github.com/roryg/ghostwriter">قالب با کمی تغییرات</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="#">کپی  محتوای اینجا کاملا آزاد و بدون اشکال می باشد :))</a>  </span>
+                    
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://hossein52hz.github.io/blog/js/jquery-1.11.3.min.js"></script>
+        <script src="https://hossein52hz.github.io/blog/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="false"></script>
+        
+        
+        <script src="https://hossein52hz.github.io/blog/js/scripts.js"></script>
+    </body>
+</html>
+
