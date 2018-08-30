@@ -7,28 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Masoudi</copyright>
-    <lastBuildDate>Tue, 22 May 2018 02:06:49 +0430</lastBuildDate>
+    <lastBuildDate>Tue, 01 May 2018 23:12:41 +0430</lastBuildDate>
     
 	<atom:link href="https://hossein52hz.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bloom Filter</title>
-      <link>https://hossein52hz.github.io/blog/tags/bloom-filter/</link>
-      <pubDate>Tue, 22 May 2018 02:06:49 +0430</pubDate>
-      
-      <guid>https://hossein52hz.github.io/blog/tags/bloom-filter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>https://hossein52hz.github.io/blog/tags/data-structure/</link>
-      <pubDate>Tue, 22 May 2018 02:06:49 +0430</pubDate>
-      
-      <guid>https://hossein52hz.github.io/blog/tags/data-structure/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Hugo</title>
@@ -36,15 +18,6 @@
       <pubDate>Tue, 01 May 2018 23:12:41 +0430</pubDate>
       
       <guid>https://hossein52hz.github.io/blog/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Probabilistic Data Structures</title>
-      <link>https://hossein52hz.github.io/blog/tags/probabilistic-data-structures/</link>
-      <pubDate>Tue, 22 May 2018 02:06:49 +0430</pubDate>
-      
-      <guid>https://hossein52hz.github.io/blog/tags/probabilistic-data-structures/</guid>
       <description></description>
     </item>
     
@@ -81,15 +54,6 @@
       <pubDate>Tue, 01 May 2018 23:12:41 +0430</pubDate>
       
       <guid>https://hossein52hz.github.io/blog/tags/%D8%B2%D9%86%DA%AF-%D8%AA%D9%81%D8%B1%DB%8C%D8%AD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ساختار داده های احتمالاتی</title>
-      <link>https://hossein52hz.github.io/blog/tags/%D8%B3%D8%A7%D8%AE%D8%AA%D8%A7%D8%B1-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA%DB%8C/</link>
-      <pubDate>Tue, 22 May 2018 02:06:49 +0430</pubDate>
-      
-      <guid>https://hossein52hz.github.io/blog/tags/%D8%B3%D8%A7%D8%AE%D8%AA%D8%A7%D8%B1-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA%DB%8C/</guid>
       <description></description>
     </item>
     

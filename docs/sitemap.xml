@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hossein52hz.github.io/blog/multiple-ssh-keys-for-github-gitlab/</loc>
-    <lastmod>2018-08-29T18:23:47+04:30</lastmod>
+    <loc>https://hossein52hz.github.io/blog/git-notices/</loc>
+    <lastmod>2018-08-30T00:30:48+04:30</lastmod>
   </url>
   
   <url>
-    <loc>https://hossein52hz.github.io/blog/probabilistic-data-structures/</loc>
-    <lastmod>2018-05-22T02:06:49+04:30</lastmod>
+    <loc>https://hossein52hz.github.io/blog/multiple-ssh-keys-for-github-gitlab/</loc>
+    <lastmod>2018-08-29T18:23:47+04:30</lastmod>
   </url>
   
   <url>
@@ -43,20 +43,8 @@
   </url>
   
   <url>
-    <loc>https://hossein52hz.github.io/blog/tags/bloom-filter/</loc>
-    <lastmod>2018-05-22T02:06:49+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hossein52hz.github.io/blog/</loc>
-    <lastmod>2018-08-29T18:23:47+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hossein52hz.github.io/blog/tags/data-structure/</loc>
-    <lastmod>2018-05-22T02:06:49+04:30</lastmod>
+    <lastmod>2018-08-30T00:30:48+04:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,19 +62,13 @@
   
   <url>
     <loc>https://hossein52hz.github.io/blog/post/</loc>
-    <lastmod>2018-08-29T18:23:47+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hossein52hz.github.io/blog/tags/probabilistic-data-structures/</loc>
-    <lastmod>2018-05-22T02:06:49+04:30</lastmod>
+    <lastmod>2018-08-30T00:30:48+04:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hossein52hz.github.io/blog/tags/</loc>
-    <lastmod>2018-05-22T02:06:49+04:30</lastmod>
+    <lastmod>2018-05-01T23:12:41+04:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,12 +93,6 @@
   <url>
     <loc>https://hossein52hz.github.io/blog/tags/%D8%B2%D9%86%DA%AF-%D8%AA%D9%81%D8%B1%DB%8C%D8%AD/</loc>
     <lastmod>2018-05-01T23:12:41+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hossein52hz.github.io/blog/tags/%D8%B3%D8%A7%D8%AE%D8%AA%D8%A7%D8%B1-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA%DB%8C/</loc>
-    <lastmod>2018-05-22T02:06:49+04:30</lastmod>
     <priority>0</priority>
   </url>
   

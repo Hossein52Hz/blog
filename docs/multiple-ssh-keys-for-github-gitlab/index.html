@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Multiple SSH-keys for Github/Gitlab &middot; Masoudi</title>
+        <title>تنظیم و استفاده از چند کلید SSH برای اکانت های مختلف Github/Gitlab &middot; Masoudi</title>
         <meta name="description" content="با سلام خدمت همه دوستان
 در این پست قرار هست نحوه استفاده از چند ssh-key برای اکانت های مختلف گیت‌هاب یا گیت‌لب را با هم بررسی کنیم.
 خب ممکنه شما چندتا اکانت گیت‌هاب یا گیت‌لب داشته باشید و یا حتی هم اکانت گیت هاب و هم اکانت گیت‌لب دارید و مدام برای پروژه هاتون کدنویسی میکنید. برای اینکه بتونید از چندتا ssh-key مختلف استفاده کنید کافیه ادامه این پست را همراه من باشید :)">
@@ -12,7 +12,7 @@
         <meta name="generator" content="Hugo 0.40" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Multiple SSH-keys for Github/Gitlab">
+        <meta property="og:title" content="تنظیم و استفاده از چند کلید SSH برای اکانت های مختلف Github/Gitlab">
 <meta property="og:description" content="با سلام خدمت همه دوستان
 در این پست قرار هست نحوه استفاده از چند ssh-key برای اکانت های مختلف گیت‌هاب یا گیت‌لب را با هم بررسی کنیم.
 خب ممکنه شما چندتا اکانت گیت‌هاب یا گیت‌لب داشته باشید و یا حتی هم اکانت گیت هاب و هم اکانت گیت‌لب دارید و مدام برای پروژه هاتون کدنویسی میکنید. برای اینکه بتونید از چندتا ssh-key مختلف استفاده کنید کافیه ادامه این پست را همراه من باشید :)">
@@ -78,7 +78,7 @@
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Multiple SSH-keys for Github/Gitlab</h1>
+    <h1 class="post-title" itemprop="name headline">تنظیم و استفاده از چند کلید SSH برای اکانت های مختلف Github/Gitlab</h1>
     
     <p class="post-date">
         <span>Published <time datetime="2018-08-29" itemprop="datePublished">Wed, Aug 29, 2018</time></span>
@@ -207,25 +207,20 @@ ssh-add ~/.ssh/id_rsa_personal</code></pre></div>
 
 <p>حالا برای تست ارتباط میتونید دستور زیر را اجرا کنید:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@home.github.com
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@github.com
 Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.</code></pre></div>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@work.github.com
-Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.</code></pre></div>
-
-<p>تبریک میگم شما موفق شدید :)</p>
 
 <h2 id="gitlab">Gitlab</h2>
 
 <p>اما در مورد گیت‌لب تمام مراحل شبیه هم هستند به جز فایل config که برای کلیدهایی که ساختید کافیه وارد فایل config توی پوشه .ssh بشید
 و کد زیر را اضافه کنید</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Host gitlab.company_url.com
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># GITLAB
+</span><span style="color:#75715e"></span>
+Host gitlab.company_url.com
    HostName gitlab.company_url.com
    PreferredAuthentications publickey
    IdentityFile ~/.ssh/id_rsa_gitlab_company</code></pre></div>
-
-<h1 id="gitlab-1">GITLAB</h1>
 
 <p>همونطور که متوجه شدید من یک کلید به اسم id_rsagitlab_company ایجاد کردم.
  و بقیه مراحل هم مشابه مراحل بالا است. برای اضافه کردن کلید به گیت‌لب هم میتونید از آدرس زیر استفاده کنید:</p>
@@ -234,7 +229,7 @@ Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</s
 
 <p>و برای تست اینکه همه چیز درست است یا نه از دستور زیر استفاده کنید:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@gitlab.company_url.com
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh -T git@gitlab.com
     
  Welcome to GitLab, Hossein52hz!</code></pre></div>
 
@@ -249,7 +244,7 @@ Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</s
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=Multiple%20SSH-keys%20for%20Github%2fGitlab&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fmultiple-ssh-keys-for-github-gitlab%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=%d8%aa%d9%86%d8%b8%db%8c%d9%85%20%d9%88%20%d8%a7%d8%b3%d8%aa%d9%81%d8%a7%d8%af%d9%87%20%d8%a7%d8%b2%20%da%86%d9%86%d8%af%20%da%a9%d9%84%db%8c%d8%af%20SSH%20%d8%a8%d8%b1%d8%a7%db%8c%20%d8%a7%da%a9%d8%a7%d9%86%d8%aa%20%d9%87%d8%a7%db%8c%20%d9%85%d8%ae%d8%aa%d9%84%d9%81%20Github%2fGitlab&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fmultiple-ssh-keys-for-github-gitlab%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
@@ -272,7 +267,7 @@ Hi Hossein52hz! You<span style="color:#960050;background-color:#1e0010">&#39;</s
             </a>
         
         
-            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Multiple%20SSH-keys%20for%20Github%2fGitlab&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fmultiple-ssh-keys-for-github-gitlab%2f&summary="
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=%d8%aa%d9%86%d8%b8%db%8c%d9%85%20%d9%88%20%d8%a7%d8%b3%d8%aa%d9%81%d8%a7%d8%af%d9%87%20%d8%a7%d8%b2%20%da%86%d9%86%d8%af%20%da%a9%d9%84%db%8c%d8%af%20SSH%20%d8%a8%d8%b1%d8%a7%db%8c%20%d8%a7%da%a9%d8%a7%d9%86%d8%aa%20%d9%87%d8%a7%db%8c%20%d9%85%d8%ae%d8%aa%d9%84%d9%81%20Github%2fGitlab&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fmultiple-ssh-keys-for-github-gitlab%2f&summary="
                onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
                <i class="fa fa-linkedin"></i>
                <span class="hidden">LinkedIn</span>

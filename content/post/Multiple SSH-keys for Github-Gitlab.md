@@ -1,5 +1,5 @@
 +++
-title = "Multiple SSH-keys for Github/Gitlab"
+title = "تنظیم و استفاده از چند کلید SSH برای اکانت های مختلف Github/Gitlab"
 description = ""
 author = ""
 date = 2018-08-29T18:23:47+04:30
@@ -200,23 +200,10 @@ https://github.com/settings/keys
 
 {{< highlight shell >}}
 
-$ ssh -T git@home.github.com
+$ ssh -T git@github.com
 Hi Hossein52hz! You've successfully authenticated, but GitHub does not provide shell access.
 
 {{< / highlight >}}
-
-
-{{< highlight shell >}}
-
-$ ssh -T git@work.github.com
-Hi Hossein52hz! You've successfully authenticated, but GitHub does not provide shell access.
-
-{{< / highlight >}}
-
-
-تبریک میگم شما موفق شدید :)
-
-
 
 
 ## Gitlab
@@ -225,6 +212,7 @@ Hi Hossein52hz! You've successfully authenticated, but GitHub does not provide s
 و کد زیر را اضافه کنید
 
  {{< highlight shell >}}
+# GITLAB
 
 Host gitlab.company_url.com
    HostName gitlab.company_url.com
@@ -232,7 +220,7 @@ Host gitlab.company_url.com
    IdentityFile ~/.ssh/id_rsa_gitlab_company
 
 {{< / highlight >}}
-# GITLAB
+
 
 
 همونطور که متوجه شدید من یک کلید به اسم id_rsagitlab_company ایجاد کردم.
@@ -249,7 +237,7 @@ Host gitlab.company_url.com
 
  {{< highlight shell >}}
 
-$ ssh -T git@gitlab.company_url.com
+$ ssh -T git@gitlab.com
     
  Welcome to GitLab, Hossein52hz!
 
