@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Masoudi</copyright>
-    <lastBuildDate>Thu, 30 Aug 2018 00:30:48 +0430</lastBuildDate>
+    <lastBuildDate>Sat, 08 Sep 2018 00:10:02 +0430</lastBuildDate>
     
 	<atom:link href="https://hossein52hz.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pkcs#7 Signature Not Signed With a Trusted Key Error</title>
+      <link>https://hossein52hz.github.io/blog/pkcs7-signature-not-signed-with-a-trusted-key-error/</link>
+      <pubDate>Sat, 08 Sep 2018 00:10:02 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/pkcs7-signature-not-signed-with-a-trusted-key-error/</guid>
+      <description>داستان upgrade Linux Mint 18.3 به نسخه 19 و دردسرهای آن خب بدون مقدمه میرم سر اصل مطلب. من از توزیع Mint 18.3 استفاده میکردم. و امروز زد به سرم که upgrade کنم به نسخه جدید یعنی ۱۹. و این شد که دردسرها شروع شد.
+سیستم من از قبل دارای ویندوز ۱۰ بود و نوع پارتیشن تیبل GPT و از همه مهمتر UEFI فعال بود.
+بعد از upgrade کردن که از طریق این لینک انجام دادم به مشکل عجیبی برخوردم.</description>
+    </item>
     
     <item>
       <title>راه کار استفاده از gitlab در زمان تحریم</title>
