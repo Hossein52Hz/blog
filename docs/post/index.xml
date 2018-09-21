@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Masoudi</copyright>
-    <lastBuildDate>Sat, 08 Sep 2018 00:10:02 +0430</lastBuildDate>
+    <lastBuildDate>Fri, 21 Sep 2018 20:59:29 +0430</lastBuildDate>
     
 	<atom:link href="https://hossein52hz.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title> مشکل تنظیم dns در لینوکس مینت</title>
+      <link>https://hossein52hz.github.io/blog/how-add-dns-in-linuxmint/</link>
+      <pubDate>Fri, 21 Sep 2018 20:59:29 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/how-add-dns-in-linuxmint/</guid>
+      <description>مشکل تنظیم dns در لینوکس مینت چند وقتی بود که مشکل سرعت اینترنت داشتم و هربار بعد از روشن کردن سیستم باید میرفتم فایل resolv.conf را ویرایش میکردم و dns های مورد نظر خودم را اضافه میکردم تا مشکل حل میشد.
+برای حل مشکل بصورت کلی میتونید وارد مسیر زیر بشید:
+cd /etc/resolvconf/resolv.conf.d/ این مسیر شامل فایل های کانفیگ سرویس dns تون هست. توی برخی از آموزش ها گفته شده بود که dns جدید را داخل فایل tail اضافه کنید.</description>
+    </item>
     
     <item>
       <title>Pkcs#7 Signature Not Signed With a Trusted Key Error</title>
