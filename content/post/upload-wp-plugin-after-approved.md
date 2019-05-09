@@ -1,7 +1,7 @@
 +++
 title = "آموزش بارگذاری پلاگین تایید شده در مخزن وردپرس"
-description = ""
-author = ""
+description = "wordpress"
+author = "Hossein Masoudi"
 date = 2019-05-09T02:34:26+04:30
 tags = []
 draft = false

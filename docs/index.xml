@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Masoudi</copyright>
-    <lastBuildDate>Fri, 21 Sep 2018 20:59:29 +0430</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 02:34:26 +0430</lastBuildDate>
     
 	<atom:link href="https://hossein52hz.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>آموزش بارگذاری پلاگین تایید شده در مخزن وردپرس</title>
+      <link>https://hossein52hz.github.io/blog/upload-wp-plugin-after-approved/</link>
+      <pubDate>Thu, 09 May 2019 02:34:26 +0430</pubDate>
+      
+      <guid>https://hossein52hz.github.io/blog/upload-wp-plugin-after-approved/</guid>
+      <description>با سلام خدمت دوستان وردپرسی
+ممکنه براتون پیش اومده باشه که بخواید یک پلاگین را توی مخزن وردپرس قرار بدید. برای این کار کافیه ابتدا داخل سایت Wordpress ثبت نام کنید و بعد در بخش پلاگین ها پلاگین خودتون را اینجا آپلود کنید.
+بعد از آپلود و دریافت ایمیل های تایید و رفع اشکالات و &amp;hellip;. زمانی که پلاگین شما تایید نهایی شد با پیغامی در صفحه ای که پلاگین را آپلود کرده بودید مواجه میشید که میگه پلاگین شما تایید شده کافیه با svn اونا بارگزاری کنید.</description>
+    </item>
     
     <item>
       <title> مشکل تنظیم dns در لینوکس مینت</title>

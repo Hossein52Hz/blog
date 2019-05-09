@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>آموزش بارگذاری پلاگین تایید شده در مخزن وردپرس &middot; Masoudi</title>
+        <meta name="description" content="wordpress">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.40.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="آموزش بارگذاری پلاگین تایید شده در مخزن وردپرس">
+<meta property="og:description" content="wordpress">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hossein52hz.github.io/blog/upload-wp-plugin-after-approved/">
+        <link rel="stylesheet" href="https://hossein52hz.github.io/blog/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Blue Bit" href="https://hossein52hz.github.io/blog/">Blue Bit</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://hossein52hz.github.io/blog/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/hossein52hz">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/hossein52hz">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:hossein52hz@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="درباره من" href="/blog/about">درباره من</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="تماس با من" href="/blog/contact/">تماس با من</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">آموزش بارگذاری پلاگین تایید شده در مخزن وردپرس</h1>
+    
+        <p class="post-description" itemprop="description">wordpress</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2019-05-09" itemprop="datePublished">Thu, May 9, 2019</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">Hossein Masoudi</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p>با سلام خدمت دوستان وردپرسی</p>
+
+<p>ممکنه براتون پیش اومده باشه که بخواید یک پلاگین را توی مخزن وردپرس قرار بدید.
+برای این کار کافیه ابتدا داخل سایت <a href="https://wordpress.org/">Wordpress</a> ثبت نام کنید و بعد در بخش پلاگین ها پلاگین خودتون را <a href="https://wordpress.org/plugins/developers/add/">اینجا آپلود</a> کنید.</p>
+
+<p>بعد از آپلود و دریافت ایمیل های تایید و رفع اشکالات و &hellip;. زمانی که پلاگین شما تایید نهایی شد با پیغامی در صفحه ای که پلاگین را آپلود کرده بودید مواجه میشید که میگه پلاگین شما تایید شده کافیه با svn اونا بارگزاری کنید.</p>
+
+<p>اگر نمیدونید svn چیه در این حد بگم که یک نرم افزار شبیه git برای کنترل نسخه کدهاتون هست که وردپرس برای مدیریت پلاگین ها روی مخزن ازش استفاده می کنه. کافیه نسخه کلاینتش را روی سیستم عامل تون نصب کنید. برای ویندوز هم مثل اینکه ابزار گرافیکی به نام <a href="https://tortoisesvn.net/">Tortoise SVN</a> هست که میتونید دانلود و نصب کنید. در اینجا من نحوه استفاده از svn را در خط فرمان توضیح میدم.</p>
+
+<p>خب دیگه بریم سراغ مرحله اصلی.
+ابتدا یک پوشه ایجاد می کنیم مثلا test و وارد پوشه می شیم.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mkdir test
+
+$ cd test/</code></pre></div>
+
+<p>بعد از وارد شدن به این پوشه دستور زیر را اجرا کنید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn co https://plugins.svn.wordpress.org/yourpluginname</code></pre></div>
+
+<p>کلمه yourpluginname اسم پلاگین شماست که وردپرس براتون توی ایمیل ارسال کرده و با این اسم پلاگینتون قرار هست داخل مخزن وردپرس منتشر بشه.</p>
+
+<p>در واقع با اجرای دستور بالا شما فایل های مربوط به پروژه ای را که وردپرس براتون ایجاد کرده را دانلود می کنید.
+بعد از اجرای دستور بالا یک پیغام بهتون میده که شما enter را بزنید.
+بعدش یک پیغام شبیه زیر در خروجی ترمینال خواهید داشت</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">A    yourpluginname/tags
+A    yourpluginname/assets
+A    yourpluginname/trunk
+A    yourpluginname/branches
+Checked out revision <span style="color:#ae81ff">111111</span>.</code></pre></div>
+
+<p>خب اینجا ما چندتا پوشه داریم. مهمترین پوشه trunk هست که شما باید فایل های اصلی پلاگین تون را داخل این پوشه قرار بدید.</p>
+
+<p>پوشهassets مسیری هست که باید فایل های مربوط به آیکن پلاگین، بنر پلاگین و اسکرین شات های پلاگین را داخلش قرار بدید.
+در مورد نحوه نام گذاری این فایل ها هم باید استاندارد وردپرس را رعایت کنید که از اینجا میتونید اطلاعات بیشتری پیدا کنید.</p>
+
+<p>و اما پوشه مهم دیگه ای که باهاش سر و کار دارید tags هست که مربوط به زمانی هست که شما کدهای پلاگین تون را بروزرسانی میکنید و نسخه پلاگینتون را آپدیت میکنید که جلوتر در موردش صحبت می کنم.</p>
+
+<p>خب مرحله به مرحله میریم جلو. ابتدا کل فایل های پلاگین را داخل پوشه trunk قرار میدیم و بعد از اون باید فایل های داخل trunk را به استیج اضافه کنیم. برای این کار دستور زیر را اجرا کنید:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn add trunk/*</code></pre></div>
+
+<p>مرحله بعدی این هست که شما باید فایل هاتون را ارسال کنید به مخزن شبیه push که داخل گیت انجام میدیم هست. برای این کار دستور زیر را اجرا می کنیم</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn ci -m <span style="color:#e6db74">&#39;Adding first version of my plugin&#39;</span></code></pre></div>
+
+<p>سوئیچ -m  هم برای کامیت کردن استفاده میشه و متن داخل تک کوتیشن هم کامیت من هست شما هرچی خواستید بنویسید.</p>
+
+<p>بعد از اجرا دستور بالا از شما نام کاربری و رمز عبور داخل سایت وردپرس را میخواد که حواستون باشه نام کاربریتون هم به حروف بزرگ و کوچیک حساس هست.</p>
+
+<p>بعد از زدن نام کاربری و رمز عبور سایت وردپرس در خط فرمان کار شما تمام هست. تبریک میگم پلاگین شما روی مخزن وردپرس منتشر شده. کافیه چند دقیقه صبر کنید و بعد به آدرس مربوط به پلاگین تون برید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://wordpress.org/plugins/yourpluginname</code></pre></div>
+
+<p>خب مرحله بعدی عکس بنر و لوگو پلاگین هست که کافیه عکس هاتون را که حتما باید با نام های زیر باشند داخل پوشه assets قرار بدید.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">banner-772x250.png
+icon-256x256.png
+
+screenshot-1.jpg
+screenshot-2.jpg</code></pre></div>
+
+<p>توضیحات کامل تر در مورد تصاویر پلاگین را <a href="https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/">اینجا</a> میتونید بخونید.</p>
+
+<p>حالا دستور زیر را مثل مرحله قبل برای فایل های داخل این پوشه اجرا کنید.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn add assets/*</code></pre></div>
+
+<p>و بعد هم کامیت و pull کردن فایل ها روی مخزن وردپرس</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn ci -m <span style="color:#e6db74">&#39;Adding plugin banner/icons&#39;</span></code></pre></div>
+
+<p>توی این مرحله هم ممکنه ازتون نام کاربری و رمز عبور بخواد که باید وارد کنید.</p>
+
+<p>تبریک میگم تا اینجای کار هم فایل های اصلی پلاگین و هم تصاویر مربوط به بنر و لوگو و اسکرین شات های پلاگین که داخل صفحه اصلی پلاگین داخل مخزن وردپرس نمایش داده میشه را به درستی بارگزاری کردید.</p>
+
+<p>خب تا اینجای کار همه چیز عالی پیش رفته و پلاگین شما روی مخزن وردپرس منتشر شده.
+حالا فرض کنید که شما تغییراتی داخل کدهای پلاگینتون دادید و میخواید پلاگین تون را بروزرسانی کنید. توجه کنید من فرض میکنم که شما بعد از بروزرسانی کدهای پلاگین تون فایل readme.txt تون را هم بروزرسانی کردید. در مورد نحوه نوشتن محتوای این فایل هم میتونید به <a href="https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/">اینجا</a> مراجعه کنید.
+یادتون نره نسخه ای که داخل فایل php اصلی پلاگین تون که هم نام با اسم پلاگین تون هست و شناسنامه پلاگینتون ابتدای فایل قرار داره هم نسخه Stable tag پلاگین را بروزرسانی کنید.</p>
+
+<p>خب من یک پوشه جدید به نام newversion ایجاد می کنم. و فایل های فعلی پلاگین را از روی مخزن fetch می کنم. برای این کار دستور زیر را اجرا می کنم.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn co https://plugins.svn.wordpress.org/mypluginname</code></pre></div>
+
+<p>خب تغییرات مربوط به فایل های پلاگین را میتونم داخل پوشه trunk انجام بدم یا کلا فایل های تغییر داده شده پلاگین را داخل این پوشه جایگزین کنم.
+حواستون باشه که حتما شماره نسخه stable tag را داخل فایل اصلی پلاگین که هم نام پلاگین هست بروزرسانی کنید.
+فرض کنید نسخه اصلی پلاگین 1.0.0 بوده و ما تغییرات جدید را اضافه کردیم پس نسخه stable tag میشه 1.0.1 یا هر شماره نسخه ای که مد نظر دارید.
+بعد از اعمال تغییرات کدها و بروزرسانی فایل readme.txt و اضافه کردن بخش  Changelog
+داخل این فایل که میتونید در موردش اینجا بیشتر مطالعه کنید. دستور زیر را اجرا کنید.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn cp trunk tags/1.0.1</code></pre></div>
+
+<p>یادتون باشه که 1.0.1 شماره نسخه جدید هست. با اجرای این دستور یک نسخه از فایل های تغییر یافته پلاگین در پوشه trunk داخل پوشه tags/1.0.1 قرار میگیره و چون شما مقدار stable tag را داخل فایل اصلی پلاگین و فایل readme به 1.0.1 تغییر دادید از این پس این نسخه به عنوان نسخه اصلی روی مخزن در نظر گرفته میشه.</p>
+
+<p>بعد از اجرای دستور بالا برای این که فایل به مخزن ارسال بشه کافیه دستور زیر را اجرا کنید</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ svn ci -m <span style="color:#e6db74">&#34;tagging version 1.0.1&#34;</span></code></pre></div>
+
+<p>تبریک میگم شما تغییرات نسخه جدید پلاگین تون را هم روی مخزن بروزرسانی کردید. توجه کنید که تغییرات روی مخزن ممکنه ۱۵دقیقه طول بکشه اعمال بشه.</p>
+
+<p>این هم چندتا منبع خوب:</p>
+
+<ul>
+<li><a href="https://developer.wordpress.org/plugins/">داکیومنت توسعه پلاگین های وردپرسی</a></li>
+<li><a href="https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/">نحوه کار با svn</a></li>
+<li><a href="https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/">سوالات متداول توسعه دهندگان</a></li>
+<li><a href="https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/">راهنمای مربوط به بخش assets</a></li>
+<li><a href="https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/">راهنمای فایل readme.txt پلاگین</a></li>
+</ul>
+
+<p>سوالی داشتید داخل کامنت ها بپرسید سعی می کنم جواب بدم.</p>
+
+<p>موفق باشید</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=%d8%a2%d9%85%d9%88%d8%b2%d8%b4%20%d8%a8%d8%a7%d8%b1%da%af%d8%b0%d8%a7%d8%b1%db%8c%20%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86%20%d8%aa%d8%a7%db%8c%db%8c%d8%af%20%d8%b4%d8%af%d9%87%20%d8%af%d8%b1%20%d9%85%d8%ae%d8%b2%d9%86%20%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fupload-wp-plugin-after-approved%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhossein52hz.github.io%2fblog%2fupload-wp-plugin-after-approved%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fupload-wp-plugin-after-approved%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=%d8%a2%d9%85%d9%88%d8%b2%d8%b4%20%d8%a8%d8%a7%d8%b1%da%af%d8%b0%d8%a7%d8%b1%db%8c%20%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86%20%d8%aa%d8%a7%db%8c%db%8c%d8%af%20%d8%b4%d8%af%d9%87%20%d8%af%d8%b1%20%d9%85%d8%ae%d8%b2%d9%86%20%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3&url=https%3a%2f%2fhossein52hz.github.io%2fblog%2fupload-wp-plugin-after-approved%2f&summary=wordpress"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hossein52hz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Blue Bit" href="https://hossein52hz.github.io/blog/">Blue Bit</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span> نیرو گرفته از <a href="https://gohugo.io/">هیوگو</a> / <a href="https://github.com/roryg/ghostwriter">قالب با کمی تغییرات</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="#">کپی  محتوای اینجا کاملا آزاد و بدون اشکال می باشد :))</a>  </span>
+                    
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://hossein52hz.github.io/blog/js/jquery-1.11.3.min.js"></script>
+        <script src="https://hossein52hz.github.io/blog/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="false"></script>
+        
+        
+        <script src="https://hossein52hz.github.io/blog/js/scripts.js"></script>
+    </body>
+</html>
+
