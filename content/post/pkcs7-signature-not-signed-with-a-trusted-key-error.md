@@ -31,7 +31,7 @@ Pkcs#7 Signature Not Signed With a Trusted Key
 
 که تصویرش را میتونید ببینید:
 
-![uefi error](/blog/images/UEFI-Error.jpeg "uefi error")
+![uefi error](/images/UEFI-Error.jpeg "uefi error")
 
 سرچ هام شروع شد و هرچی گوگل کردیم بی فایده بود خیلی های دیگه با این خطا روبرو شده بودند ولی اکثرا مربوط به درایور nvidia بود. 
 

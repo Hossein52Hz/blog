@@ -1,5 +1,5 @@
-baseurl = "https://hossein52hz.github.io/blog/"
-title = "Blue Bit"
+baseurl = "https://tinybit.ir"
+title = "Tinybit"
 publishdir = "docs"
 theme = "ghostwriter"
 languageCode = "en-us"
@@ -16,10 +16,10 @@ disqusShortname = "hossein52hz"
 
 [Params]
     intro = true
-    headline = "Blue Bit"
+    headline = "یک بیت تنها و خندون :))"
     description = "یک عدد دانشجو علاقه مند به دنیای برنامه نویسی"
     github = "https://github.com/hossein52hz"
-    twitter = "https://twitter.com/hossein52hz"
+    twitter = "https://twitter.com/HosainMasoudi"
    
     email = "hossein52hz@gmail.com"
     opengraph = true

@@ -96,7 +96,7 @@ draft = true
 تنظیمات مربوط به سایت در فایل  config.toml باید وارد بشه پس برای وارد/ویرایش کردن تنظیمات این فایل را با یک ادیتور باز می کنیم.
 
 {{< highlight shell >}}
-baseurl = "https://hossein52hz.github.io/blog/"
+baseurl = "https://hossein52hz.github.io/"
 title = "Blue Bit"
 publishDir = "docs"
 theme = "ghostwriter"
@@ -122,11 +122,11 @@ theme هم نام قالبی هست که استفاده میکنید.
 برای این کار ابتدا وارد اکانت گیت هاب خودتون بشید. بعد از این کار روی گزینه  [New repository](https://github.com/new) کلیک کنید. 
 طبق تصویر زیر یک نام برای مسیری که میخواید سایتتون قرار بگیره وارد کنید و پروژه هم بصورت public قرار بدید و در پایان روی گزینه Create repository کلیک کنید.
 
-![github new repo](/blog/images/githubNewRepo.png "github new repo")
+![github new repo](/images/githubNewRepo.png "github new repo")
 
 من اسم blog را وارد می کنم و روی گزینه Create repository کلیک میکنم. خب ریپوی ما ساخته شد.
 
-![github new repo](/blog/images/githubQuickSetup.png "github new repo")
+![github new repo](/images/githubQuickSetup.png "github new repo")
 
 خب در ادامه برای اینکه ما فایل های سایت را منتقل کنیم روی گیت هابمون به ترتیب دستورات زیر را اجرا میکنیم(فرض من این هست که با گیت و سایت گیت هاب آشنایی دارید در غیر این صورت یکم از گوگل کمک بگیرید چون خارج از بحث ما هست.)
 
@@ -150,7 +150,7 @@ git push -u origin master
 
 خب در ادامه چندتا کوچیک هست که باید انجام بدید تا سایت روی گیت هاب نمایش داده بشه. اولین کار این هست که از قسمت settings ریپوی جدیدی که ساختید از قسمت GitHub Pages گزینه دوم یعنی master branch /docs folder را انتخاب کنید. 
 
-![github pages](/blog/images/githubPages.png "github pages")
+![github pages](/images/githubPages.png "github pages")
 
 خب نکته ای که هست اینه که گیت هاب محتوای داخل پوشه docs را به عنوان مسیر اصلی سایت میشناسه. پس ما باید کل محتوای سایتمون داخل پوشه ای به اسم docs قرار بدیم. برای این کار باید مسیر انتشار فایل های نهایی سایت را تغییر بدیم. یک گزینه ای ما در تنظیمات سایت داشتیم و اگر ندارید کافیه اضافه کنید. پس فایل config.toml را ویرایش میکنیم و مسیر جدید خروجی سایت را تعیین میکنیم:
 
@@ -167,7 +167,7 @@ rm -R public
 مرحله بعدی که باید انجام بدیم این هست که baseurl را تغییر بدیم به آدرسی که گیتهاب هنگام انتخاب master branch /docs folder برامون ایجاد کرد. برای این کار فایل config.toml را من ویرایش می کنم و مقدار زیر را وارد می کنم:
 
 {{< highlight shell >}}
-baseurl = "https://hossein52hz.github.io/blog/"
+baseurl = "https://hossein52hz.github.io/"
 {{< / highlight >}}
 
 
@@ -191,7 +191,7 @@ git push -u origin master
 خب میتونید سایتتون را داخل urlی که ایجاد شد ببینید. برای من آدرس بلاگم به صورت زیر هست:
 
 {{< highlight shell >}}
-baseurl = "https://hossein52hz.github.io/blog/"
+baseurl = "https://hossein52hz.github.io/"
 {{< / highlight >}}
 
 اگر صفحه سایتتون بالا نیومد یکمی صبر کنید و چندبار رفرش کنید ممکنه یکم طول بکشه. امیدوارم این آموزش بدردتون خورده باشه و خوشحال میشم اگر انتقاد/پیشنهاد داشتید مطرح کنید.
