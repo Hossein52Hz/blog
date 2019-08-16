@@ -1,4 +1,4 @@
-baseurl = "https://tinybit.ir"
+baseurl = "https://tinybit.ir/"
 title = "Tinybit"
 publishdir = "docs"
 theme = "ghostwriter"
