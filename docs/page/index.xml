@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Blue Bit</title>
-    <link>https://hossein52hz.github.io/blog/page/</link>
-    <description>Recent content in Pages on Blue Bit</description>
+    <title>Pages on Tinybit</title>
+    <link>https://tinybit.ir/page/</link>
+    <description>Recent content in Pages on Tinybit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Masoudi</copyright>
     <lastBuildDate>Thu, 26 Apr 2018 00:59:34 +0430</lastBuildDate>
     
-	<atom:link href="https://hossein52hz.github.io/blog/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tinybit.ir/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>about</title>
-      <link>https://hossein52hz.github.io/blog/about/</link>
+      <link>https://tinybit.ir/about/</link>
       <pubDate>Thu, 26 Apr 2018 00:59:34 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/about/</guid>
+      <guid>https://tinybit.ir/about/</guid>
       <description>حسین مسعودی هستم. دانشجوی کارشناسی ارشد آی تی و علاقه مند به دنیای برنامه نویسی/لینوکس/فیلم/سریال/ شنا/پیاده روی و از همه مهمتر یادگیری.
-اینجا به نظرم جای خوبیه برای انتشار دیدگاه ها و چیزهای جالبی که بهشون بر میخورم و ممکنه در موردشون بنویسم. راستش خیلی دلم میخواست تجربیات تلخی که داشتم را هم اینجا بنویسم اما خب فعلا مثبت فکر کنیم بهتر هست :) در مورد Blue bit هم اسمش قشنگ بود دامنه ش را ثبت کردم دلیل دیگه ای نداشته.</description>
+اینجا به نظرم جای خوبیه برای انتشار دیدگاه ها و چیزهای جالبی که بهشون بر میخورم و ممکنه در موردشون بنویسم. راستش خیلی دلم میخواست تجربیات تلخی که داشتم را هم اینجا بنویسم اما خب فعلا مثبت فکر کنیم بهتر هست :) در مورد Tiny bit هم اسمش قشنگ بود دامنه ش را ثبت کردم دلیل دیگه ای نداشته.</description>
     </item>
     
     <item>
       <title>تماس با من</title>
-      <link>https://hossein52hz.github.io/blog/contact/</link>
+      <link>https://tinybit.ir/contact/</link>
       <pubDate>Thu, 26 Apr 2018 00:59:34 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/contact/</guid>
-      <description>در شبکه های اجتماعی با نام Hossein52hz حضور دارم.
-در صورت تمایل به ارسال ایمیل هم می تونید از آدرس زیر استفاده کنید:
+      <guid>https://tinybit.ir/contact/</guid>
+      <description>در صورت تمایل به ارسال ایمیل هم می تونید از آدرس زیر استفاده کنید:
 hossein52hz[at]gmail[dot]com</description>
     </item>
     

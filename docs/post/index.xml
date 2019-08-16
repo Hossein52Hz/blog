@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blue Bit</title>
-    <link>https://hossein52hz.github.io/blog/post/</link>
-    <description>Recent content in Posts on Blue Bit</description>
+    <title>Posts on Tinybit</title>
+    <link>https://tinybit.ir/post/</link>
+    <description>Recent content in Posts on Tinybit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Masoudi</copyright>
     <lastBuildDate>Thu, 09 May 2019 02:34:26 +0430</lastBuildDate>
     
-	<atom:link href="https://hossein52hz.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tinybit.ir/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>آموزش بارگذاری پلاگین تایید شده در مخزن وردپرس</title>
-      <link>https://hossein52hz.github.io/blog/upload-wp-plugin-after-approved/</link>
+      <link>https://tinybit.ir/upload-wp-plugin-after-approved/</link>
       <pubDate>Thu, 09 May 2019 02:34:26 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/upload-wp-plugin-after-approved/</guid>
+      <guid>https://tinybit.ir/upload-wp-plugin-after-approved/</guid>
       <description>با سلام خدمت دوستان وردپرسی
 ممکنه براتون پیش اومده باشه که بخواید یک پلاگین را توی مخزن وردپرس قرار بدید. برای این کار کافیه ابتدا داخل سایت Wordpress ثبت نام کنید و بعد در بخش پلاگین ها پلاگین خودتون را اینجا آپلود کنید.
 بعد از آپلود و دریافت ایمیل های تایید و رفع اشکالات و &amp;hellip;. زمانی که پلاگین شما تایید نهایی شد با پیغامی در صفحه ای که پلاگین را آپلود کرده بودید مواجه میشید که میگه پلاگین شما تایید شده کافیه با svn اونا بارگزاری کنید.</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title> مشکل تنظیم dns در لینوکس مینت</title>
-      <link>https://hossein52hz.github.io/blog/how-add-dns-in-linuxmint/</link>
+      <link>https://tinybit.ir/how-add-dns-in-linuxmint/</link>
       <pubDate>Fri, 21 Sep 2018 20:59:29 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/how-add-dns-in-linuxmint/</guid>
+      <guid>https://tinybit.ir/how-add-dns-in-linuxmint/</guid>
       <description>مشکل تنظیم dns در لینوکس مینت چند وقتی بود که مشکل سرعت اینترنت داشتم و هربار بعد از روشن کردن سیستم باید میرفتم فایل resolv.conf را ویرایش میکردم و dns های مورد نظر خودم را اضافه میکردم تا مشکل حل میشد.
 برای حل مشکل بصورت کلی میتونید وارد مسیر زیر بشید:
 cd /etc/resolvconf/resolv.conf.d/ این مسیر شامل فایل های کانفیگ سرویس dns تون هست. توی برخی از آموزش ها گفته شده بود که dns جدید را داخل فایل tail اضافه کنید.</description>
@@ -36,10 +36,10 @@ cd /etc/resolvconf/resolv.conf.d/ این مسیر شامل فایل های کا�
     
     <item>
       <title>Pkcs#7 Signature Not Signed With a Trusted Key Error</title>
-      <link>https://hossein52hz.github.io/blog/pkcs7-signature-not-signed-with-a-trusted-key-error/</link>
+      <link>https://tinybit.ir/pkcs7-signature-not-signed-with-a-trusted-key-error/</link>
       <pubDate>Sat, 08 Sep 2018 00:10:02 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/pkcs7-signature-not-signed-with-a-trusted-key-error/</guid>
+      <guid>https://tinybit.ir/pkcs7-signature-not-signed-with-a-trusted-key-error/</guid>
       <description>داستان upgrade Linux Mint 18.3 به نسخه 19 و دردسرهای آن خب بدون مقدمه میرم سر اصل مطلب. من از توزیع Mint 18.3 استفاده میکردم. و امروز زد به سرم که upgrade کنم به نسخه جدید یعنی ۱۹. و این شد که دردسرها شروع شد.
 سیستم من از قبل دارای ویندوز ۱۰ بود و نوع پارتیشن تیبل GPT و از همه مهمتر UEFI فعال بود.
 بعد از upgrade کردن که از طریق این لینک انجام دادم به مشکل عجیبی برخوردم.</description>
@@ -47,10 +47,10 @@ cd /etc/resolvconf/resolv.conf.d/ این مسیر شامل فایل های کا�
     
     <item>
       <title>راه کار استفاده از gitlab در زمان تحریم</title>
-      <link>https://hossein52hz.github.io/blog/git-notices/</link>
+      <link>https://tinybit.ir/git-notices/</link>
       <pubDate>Thu, 30 Aug 2018 00:30:48 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/git-notices/</guid>
+      <guid>https://tinybit.ir/git-notices/</guid>
       <description>خب همونطور که میدونید GitLab هم ایران را تحریم کرده و دردسر توسعه دهنده ها و برنامه نویس ها را نسبت به قبل بیشتر کرده.
 راه حل های مختلفی وجود داره که یکی از دوستان توی این لینک توضیحاتی در موردش نوشتن. راه حل های خوبی گفته شده و یک راه حل جدید هم من اینجا مینویسم شاید به درد دوستان بخوره.
 به احتمال زیاد با سرویس Tor آشنا هستید :)) خب اگر آشنا نیستید نگران نباشید آقای علی مولایی توضیح مفصل و کاملی برای نصب و راه اندازی این سرویس برای دور زدن عمو فیلترچی دادن که می تونید از اینجا اطلاعات کاملی بدست بیارید و اون را نصب و راه اندازی کنید.</description>
@@ -58,10 +58,10 @@ cd /etc/resolvconf/resolv.conf.d/ این مسیر شامل فایل های کا�
     
     <item>
       <title>تنظیم و استفاده از چند کلید SSH برای اکانت های مختلف Github/Gitlab</title>
-      <link>https://hossein52hz.github.io/blog/multiple-ssh-keys-for-github-gitlab/</link>
+      <link>https://tinybit.ir/multiple-ssh-keys-for-github-gitlab/</link>
       <pubDate>Wed, 29 Aug 2018 18:23:47 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/multiple-ssh-keys-for-github-gitlab/</guid>
+      <guid>https://tinybit.ir/multiple-ssh-keys-for-github-gitlab/</guid>
       <description>با سلام خدمت همه دوستان
 در این پست قرار هست نحوه استفاده از چند ssh-key برای اکانت های مختلف گیت‌هاب یا گیت‌لب را با هم بررسی کنیم.
 خب ممکنه شما چندتا اکانت گیت‌هاب یا گیت‌لب داشته باشید و یا حتی هم اکانت گیت هاب و هم اکانت گیت‌لب دارید و مدام برای پروژه هاتون کدنویسی میکنید. برای اینکه بتونید از چندتا ssh-key مختلف استفاده کنید کافیه ادامه این پست را همراه من باشید :)</description>
@@ -69,19 +69,19 @@ cd /etc/resolvconf/resolv.conf.d/ این مسیر شامل فایل های کا�
     
     <item>
       <title>چرا باید به قبرستان‌ها برویم!</title>
-      <link>https://hossein52hz.github.io/blog/visit-cemeteries/</link>
+      <link>https://tinybit.ir/visit-cemeteries/</link>
       <pubDate>Tue, 22 May 2018 01:02:25 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/visit-cemeteries/</guid>
+      <guid>https://tinybit.ir/visit-cemeteries/</guid>
       <description>چرا باید به قبرستان شرکت های نرم افزاری سری بزنیم؟ ریک به هر کجا نگاه می کند ستاره های راک را می بیند. صفحه تلوزیون، جلد مجلات، برنامه های کنسرت و سایت های هواداران، آن ها را همه جا می توان دید. نمی توان آهنگ هایشان را در میان بازار، رادیو و سالن های بدن سازی نشنید. ستارگان راک همه جا حضور دارند. خیلی پر شمار و موفق اند. ریک که از داستان های قهرمانان پر شمار گیتاریست هیجان زده شده بود یک گروه موسیقی راه اندازی کرد.</description>
     </item>
     
     <item>
       <title>زنگ تفریح با Hugo قسمت دوم</title>
-      <link>https://hossein52hz.github.io/blog/fun-with-hugo-2/</link>
+      <link>https://tinybit.ir/fun-with-hugo-2/</link>
       <pubDate>Tue, 01 May 2018 23:12:41 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/fun-with-hugo-2/</guid>
+      <guid>https://tinybit.ir/fun-with-hugo-2/</guid>
       <description>توی قسمت اول در مورد مقدمه و نصب و راه اندازی سایت با Hugo توضیح دادم.
 این قسمت میریم سراغ موارد زیر:
  ایجاد اولین نوشته تنظیمات مربوط به قالب بارگزاری قالب در گیت هاب  ایجاد اولین نوشته خب برای ایجاد اولین نوشته میتونید از دستور زیر استفاده کنید:
@@ -91,10 +91,10 @@ hugo server خب برای مشاهده خروجی میتونید ی سر به آ
     
     <item>
       <title>زنگ تفریح با Hugo قسمت اول</title>
-      <link>https://hossein52hz.github.io/blog/fun-with-hugo/</link>
+      <link>https://tinybit.ir/fun-with-hugo/</link>
       <pubDate>Wed, 25 Apr 2018 16:21:42 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/fun-with-hugo/</guid>
+      <guid>https://tinybit.ir/fun-with-hugo/</guid>
       <description>سلام خدمت دوستانی که شاید گذرشون به اینجا بخوره :)
 راستش از سر کنجکاوی رفتم سراغ هیوگو یا Hugo که یک سایت ساز استاتیک هست. یکم جست و جو کردم و طبق معمول منابع فارسی خاصی پیدا نمیشه. برای همین گفتم چیزایی که تا الان یاد گرفتم را اینجا بنویسم شاید بدرد کسی بخوره.
 خب همونطور که میدونید Hugo یک سایت ساز استاتیک هست و میشه گفت یکی از رقیب های jeklly که شاید از قبل باهاش آشنایی داشته باشید.</description>
@@ -102,10 +102,10 @@ hugo server خب برای مشاهده خروجی میتونید ی سر به آ
     
     <item>
       <title>سخن آغازین</title>
-      <link>https://hossein52hz.github.io/blog/my-first-blog-post/</link>
+      <link>https://tinybit.ir/my-first-blog-post/</link>
       <pubDate>Wed, 25 Apr 2018 15:48:23 +0430</pubDate>
       
-      <guid>https://hossein52hz.github.io/blog/my-first-blog-post/</guid>
+      <guid>https://tinybit.ir/my-first-blog-post/</guid>
       <description>اولین پست من در وبلاگ که بعدا تکمیل میشه :) اینجا به نظرم جای خوبیه برای انتشار دیدگاه ها و چیزهای جالبی که بهشون بر میخورم و ممکنه در موردشون بنویسم. راستش دلم میخواست از تجربیات تلخی که داشتم هم اینجا بنویسم اما خب فعلا مثبت فکر کنیم بهتر هست :)
 همیشه وسواس زیاد یا ایده آل بودن چیز جالبی نیست. برای همین تصمیم گرفتم بنویسم هرچند کوتاه یا اشتباه، ولی بنویسم و به مرور زمان تصحیح کنم.</description>
     </item>
